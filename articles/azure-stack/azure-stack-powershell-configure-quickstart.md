@@ -143,11 +143,11 @@ Install-Module `
 # Download Azure Stack tools from GitHub and import the connect module
 cd \
 
-invoke-webrequest `
+Invoke-WebRequest `
   https://github.com/Azure/AzureStack-Tools/archive/master.zip `
   -OutFile master.zip
 
-expand-archive master.zip `
+Expand-Archive master.zip `
   -DestinationPath . `
   -Force
 
